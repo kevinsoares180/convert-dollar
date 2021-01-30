@@ -1,0 +1,76 @@
+.conversor
+{
+    margin: auto;
+    display: block;
+    padding: 50px;
+    max-width: 300px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    border:2px solid  rgb(6, 5, 7);
+    box-shadow: 10px 10px 4px 0px rgb(43, 12, 75);
+}
+.button-convert
+{
+  
+    color: rebeccapurple;
+    text-transform:uppercase;
+    font-weight: 700;
+    padding:11px;
+    margin: auto;
+    width: 100px;
+    font-family:monospace;
+    border-radius:  20px;
+    border: 2px solid rebeccapurple;
+    box-shadow: 0 3px 3px 0 rebeccapurple;
+    
+}
+.input-convert
+{
+   
+    border: 2px solid rebeccapurple;
+    width: 150px;
+    text-transform:uppercase;
+    border-radius:  50px;
+    font-weight: 700;
+    box-shadow: 0 3px 3px 0 rebeccapurple;
+    padding: 10px;
+}
+h2{
+    color: white;
+    background-color: rebeccapurple;
+    border-radius:  20px;
+    font-weight: 700;
+    border: solid rgb(68, 10, 122);
+    box-shadow: 0 4px 4px 0 rebeccapurple;
+    padding: 10px;
+}
+h3{
+    color: rebeccapurple;
+    font-size: 16px;
+    border-radius:  20px;
+    font-weight: 700;
+    border: solid rebeccapurple;
+    padding: 10px;
+    box-shadow: 0 3px 3px 0 rebeccapurple;
+}
+
+h1
+{
+    color: white;
+    border-radius:  20px;
+    font-weight: 700;
+    border: solid rebeccapurple;
+    box-shadow: 0 4px 8px 0 rebeccapurple;
+    padding: 10px;
+    animation: infinite;
+    animation-direction: alternate;
+    animation-name: example;
+    animation-duration: 0.6s;
+}
+@keyframes example {
+    0%   {box-shadow: 0 0px 0px 0 rebeccapurple;}
+    25%  {box-shadow: 0 1px 2px 1px rebeccapurple;}
+    50%  {box-shadow: 0 2px 4px 2px rebeccapurple;}
+    100% {box-shadow: 0 4px 8px 3px rebeccapurple;}
+  }
+  
