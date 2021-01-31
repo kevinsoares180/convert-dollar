@@ -3,7 +3,6 @@ import './Conversor.css'
 
 export default class Conversor extends Component
 {
-
     constructor(props)
     {
         super(props);
@@ -20,12 +19,9 @@ export default class Conversor extends Component
 
     converter()
     {
-        let de_para = `${this.props.moedaA}_${this.props.moedaB}`
-        console.log(de_para);
-        let url = `https://free.currconv.com/api/v7/convert?q=${de_para}&compact=ultra&apiKey=f9a6a109a6180a869aa0`
-        console.log(url);
-       
-
+        let de_para = `${this.props.moedaA}_${this.props.moedaB}`;
+        let url = `https://free.currconv.com/api/v7/convert?q=${de_para}&compact=ultra&apiKey=f9a6a109a6180a869aa0`; 
+        
         fetch(url)
         .then(res => res.json())
         .then((data) => {
@@ -51,12 +47,12 @@ export default class Conversor extends Component
        
                     <input className="button-convert" type="button" value="Converter" onClick={ this.converter}></input>
                     
-                    {/* se o valor for maior que zero verificar Sim depois Não*/}
+                    
                     <h3>{this.state.moedaA_ValorAfter > 0 
                     ? 
                     this.state.moedaA_ValorAfter  +  ' ' + this.props.moedaA + ' = ' + this.state.moedaB_valor + ' ' + this.props.moedaB
                     : 
-                    '0' +  ' ' + this.props.moedaA + ' = ' + this.state.moedaB_valor + ' ' + this.props.moedaB}</h3>
+                    '0' + this.props.moedaA + " = " + this.state.moedaB_valor + " " + this.props.moedaB}</h3>
                 </div>
 
         );
